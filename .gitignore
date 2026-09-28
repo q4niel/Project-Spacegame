@@ -3,3 +3,12 @@
 !.gitignore
 !.re-mote
 !readme.md
+
+!Assets/
+!Assets/**/*
+
+!Packages/
+!Packages/**/*
+
+!ProjectSettings/
+!ProjectSettings/**/*
