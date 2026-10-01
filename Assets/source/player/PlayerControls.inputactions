@@ -15,6 +15,26 @@
                     "interactions": "",
                     "initialStateCheck": true,
                     "priority": 0
+                },
+                {
+                    "name": "bullet",
+                    "type": "Button",
+                    "id": "4b3447dd-e3b0-4d14-bf32-6b2587b9282c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "energyBolt",
+                    "type": "Button",
+                    "id": "a193f3e8-a0d6-459d-878f-67cc275c8f46",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -237,6 +257,28 @@
                     "action": "move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "ab59f69b-b469-4065-807b-0f343733b659",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "energyBolt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6e862c70-a108-457f-bd55-4f1af8815a66",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "bullet",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

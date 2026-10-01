@@ -101,6 +101,26 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""initialStateCheck"": true,
                     ""priority"": 0
+                },
+                {
+                    ""name"": ""bullet"",
+                    ""type"": ""Button"",
+                    ""id"": ""4b3447dd-e3b0-4d14-bf32-6b2587b9282c"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
+                },
+                {
+                    ""name"": ""energyBolt"",
+                    ""type"": ""Button"",
+                    ""id"": ""a193f3e8-a0d6-459d-878f-67cc275c8f46"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
                 }
             ],
             ""bindings"": [
@@ -323,6 +343,28 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ab59f69b-b469-4065-807b-0f343733b659"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""energyBolt"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6e862c70-a108-457f-bd55-4f1af8815a66"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""bullet"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -332,6 +374,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         // game
         m_game = asset.FindActionMap("game", throwIfNotFound: true);
         m_game_move = m_game.FindAction("move", throwIfNotFound: true);
+        m_game_bullet = m_game.FindAction("bullet", throwIfNotFound: true);
+        m_game_energyBolt = m_game.FindAction("energyBolt", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
@@ -413,6 +457,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_game;
     private List<IGameActions> m_GameActionsCallbackInterfaces = new List<IGameActions>();
     private readonly InputAction m_game_move;
+    private readonly InputAction m_game_bullet;
+    private readonly InputAction m_game_energyBolt;
     /// <summary>
     /// Provides access to input actions defined in input action map "game".
     /// </summary>
@@ -428,6 +474,14 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "game/move".
         /// </summary>
         public InputAction @move => m_Wrapper.m_game_move;
+        /// <summary>
+        /// Provides access to the underlying input action "game/bullet".
+        /// </summary>
+        public InputAction @bullet => m_Wrapper.m_game_bullet;
+        /// <summary>
+        /// Provides access to the underlying input action "game/energyBolt".
+        /// </summary>
+        public InputAction @energyBolt => m_Wrapper.m_game_energyBolt;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -457,6 +511,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @move.started += instance.OnMove;
             @move.performed += instance.OnMove;
             @move.canceled += instance.OnMove;
+            @bullet.started += instance.OnBullet;
+            @bullet.performed += instance.OnBullet;
+            @bullet.canceled += instance.OnBullet;
+            @energyBolt.started += instance.OnEnergyBolt;
+            @energyBolt.performed += instance.OnEnergyBolt;
+            @energyBolt.canceled += instance.OnEnergyBolt;
         }
 
         /// <summary>
@@ -471,6 +531,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @move.started -= instance.OnMove;
             @move.performed -= instance.OnMove;
             @move.canceled -= instance.OnMove;
+            @bullet.started -= instance.OnBullet;
+            @bullet.performed -= instance.OnBullet;
+            @bullet.canceled -= instance.OnBullet;
+            @energyBolt.started -= instance.OnEnergyBolt;
+            @energyBolt.performed -= instance.OnEnergyBolt;
+            @energyBolt.canceled -= instance.OnEnergyBolt;
         }
 
         /// <summary>
@@ -518,5 +584,19 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnMove(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "bullet" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnBullet(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "energyBolt" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnEnergyBolt(InputAction.CallbackContext context);
     }
 }
