@@ -16,6 +16,8 @@ public class Projectile : MonoBehaviour {
         Rigidbody2D rb = transform.gameObject.AddComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.gravityScale = 0.0f;
+
+        transform.gameObject.AddComponent<BoxCollider2D>();
     }
 
     public void enable(Vector2 pos, Vector2 dir) {
