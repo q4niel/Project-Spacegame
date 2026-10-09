@@ -3,20 +3,70 @@ using System.Linq;
 using UnityEngine;
 
 public class ProjectilePool : MonoBehaviour {
-    [SerializeField] GameObject bullet;
-    List<GameObject> _bullets = new List<GameObject>();
+    [SerializeField] Sprite _bulletSprite;
+    [SerializeField] Sprite _energyBoltSprite;
 
-    [SerializeField] GameObject energyBolt;
-    List<GameObject> _energyBolts = new List<GameObject>();
+    List<GameObject> _container = new List<GameObject>();
 
-    public void spawnBullet(Vector2 pos, Vector2 dir)
-        => _spawn(pos, dir, bullet, ref _bullets);
+    public enum Spritey {
+        Bullet,
+        EnergyBolt
+    }
 
-    public void spawnEnergyBolt(Vector2 pos, Vector2 dir)
-        => _spawn(pos, dir, energyBolt, ref _energyBolts);
+    Dictionary<Spritey, Sprite> _sprites = new Dictionary<Spritey, Sprite>();
 
-    void _spawn(Vector2 pos, Vector2 dir, GameObject gameObject, ref List<GameObject> container) {
-        container.Add(Instantiate(gameObject));
-        container.Last().GetComponent<Projectile>().enable(pos, dir);
+    void Awake() {
+        _sprites.Add(Spritey.Bullet, _bulletSprite);
+        _sprites.Add(Spritey.EnergyBolt, _energyBoltSprite);
+    }
+
+    void Update() {
+        Debug.Log($"Num of Projs: {_container.Count}");
+    }
+
+    public void spawnBullet(Vector2 pos, Vector2 dir) => _spawn (
+        pos,
+        dir,
+        DamageType.Physical,
+        1,
+        8,
+        Spritey.Bullet
+    );
+
+    public void spawnEnergyBolt(Vector2 pos, Vector2 dir) => _spawn (
+        pos,
+        dir,
+        DamageType.Energy,
+        1,
+        8,
+        Spritey.EnergyBolt
+    );
+
+    void _spawn (
+        Vector2 pos,
+        Vector2 dir,
+        DamageType dmgType,
+        int dmg,
+        float speed,
+        Spritey spritey
+    ) {
+        Projectile.Factory factory = new Projectile.Factory (
+            _sprites[spritey],
+            pos,
+            dir,
+            dmgType,
+            dmg,
+            speed
+        );
+
+        foreach (GameObject proj in _container) {
+            if (proj.activeInHierarchy) continue;
+
+            proj.GetComponent<Projectile>().enable(factory);
+            return;
+        }
+
+        _container.Add(new GameObject());
+        _container.Last().AddComponent<Projectile>().enable(factory);
     }
 }
