@@ -20,10 +20,6 @@ public class ProjectilePool : MonoBehaviour {
         _sprites.Add(Spritey.EnergyBolt, _energyBoltSprite);
     }
 
-    void Update() {
-        Debug.Log($"Num of Projs: {_container.Count}");
-    }
-
     public void spawnBullet(Vector2 pos, Vector2 dir) => _spawn (
         pos,
         dir,
