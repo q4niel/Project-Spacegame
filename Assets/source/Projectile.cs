@@ -96,9 +96,9 @@ public class Projectile : MonoBehaviour {
 
         Vector2 screenPos = Camera.main.WorldToScreenPoint(transform.position);
 
-        if (screenPos.x > Screen.currentResolution.width / 4
+        if (screenPos.x > Screen.currentResolution.width
         ||  screenPos.x < 0
-        ||  screenPos.y > Screen.currentResolution.height / 4
+        ||  screenPos.y > Screen.currentResolution.height
         || screenPos.y < 0
         ) {
             disable();
