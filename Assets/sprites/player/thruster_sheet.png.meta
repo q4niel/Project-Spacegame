@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 8c9fccb066724cc7eb30c814fe3291ce
+guid: efec606a58938c9a3b0a25bbb6b51d8c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -565522128644932208
-    second: thruster_0
+      213: -800928512638074294
+    second: thruster_sheet_0
+  - first:
+      213: -8663620033340638942
+    second: thruster_sheet_1
+  - first:
+      213: -4182677310294841462
+    second: thruster_sheet_2
+  - first:
+      213: 1492313903645518588
+    second: thruster_sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -102,23 +111,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: thruster_0
+      name: thruster_sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 12
-        width: 10
-        height: 7
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 09dfe79ce9cd628f0800000000000000
-      internalID: -565522128644932208
+      spriteID: a42c9b1e2c782e4f0800000000000000
+      internalID: -800928512638074294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thruster_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229f5c34b73a4c780800000000000000
+      internalID: -8663620033340638942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thruster_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a872ac5a52524f5c0800000000000000
+      internalID: -4182677310294841462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thruster_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfaea28b693c5b410800000000000000
+      internalID: 1492313903645518588
       vertices: []
       indices: 
       edges: []
@@ -127,7 +202,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: f166cdaae818ef118b623f59683deefc
     internalID: 0
     vertices: []
     indices: 
@@ -135,9 +210,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      thruster_0: -565522128644932208
+      thruster_sheet_0: -800928512638074294
+      thruster_sheet_1: -8663620033340638942
+      thruster_sheet_2: -4182677310294841462
+      thruster_sheet_3: 1492313903645518588
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

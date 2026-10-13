@@ -4,11 +4,16 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
     [SerializeField] float _maxVelocity;
     [SerializeField] float _velocityDecreaseDuration;
+    [SerializeField] float _boostBuildupTime;
+    [SerializeField] float _boostVelocityMultiplier;
+    [SerializeField] Animator _thrusterAnimator;
 
     Vector2 _prevDir = Vector2.zero;
 
     float _xVel = .0f;
     float _xVelElapsed = .0f;
+    float _boostBuildup = .0f;
+    bool _isBoosting = false;
 
     float _yVel = .0f;
     float _yVelElapsed = .0f;
@@ -20,8 +25,13 @@ public class PlayerMovement : MonoBehaviour {
             _prevDir.x = dir.x;
             _xVel = _maxVelocity;
             _xVelElapsed = .0f;
+
+            if (dir.x > 0) startBoost();
         }
-        else decreaseVel(ref _xVel, ref _xVelElapsed);
+        else {
+            decreaseVel(ref _xVel, ref _xVelElapsed);
+            stopBoost();
+        }
 
         if (dir.y != 0) {
             _prevDir.y = dir.y;
@@ -30,10 +40,24 @@ public class PlayerMovement : MonoBehaviour {
         }
         else decreaseVel(ref _yVel, ref _yVelElapsed);
 
-        newPos.x += _prevDir.x * _xVel * Time.deltaTime;
+        newPos.x += _prevDir.x * _xVel * (_isBoosting ? _boostVelocityMultiplier : 1) * Time.deltaTime;
         newPos.y += _prevDir.y * _yVel * Time.deltaTime;
 
         transform.position = newPos;
+    }
+
+    void startBoost() {
+        _boostBuildup += Time.deltaTime;
+        if (_boostBuildup < _boostBuildupTime) return;
+
+        _isBoosting = true;
+        _thrusterAnimator.SetBool("boost", true);
+    }
+
+    void stopBoost() {
+        _boostBuildup = .0f;
+        _isBoosting = false;
+        _thrusterAnimator.SetBool("boost", false);
     }
 
     void decreaseVel(ref float vel, ref float elapsed) {
