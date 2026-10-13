@@ -35,6 +35,16 @@
                     "interactions": "",
                     "initialStateCheck": false,
                     "priority": 0
+                },
+                {
+                    "name": "boost",
+                    "type": "Button",
+                    "id": "01f45178-e969-44c7-93ff-b9c0d5fb2a9a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -299,6 +309,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "bullet",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b996248c-ca95-4625-bf98-92f26d004df9",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "boost",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

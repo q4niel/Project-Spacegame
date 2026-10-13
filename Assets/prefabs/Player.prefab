@@ -61,10 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   _maxVelocity: 5
   _velocityDecreaseDuration: 0.5
-  _boostBuildupTime: 0.8
-  _boostVelocityMultiplier: 1.5
-  _fallBuildupTime: 0.5
-  _fallVelocityMultiplier: 1.5
+  _boostVelocityMultiplier: 2
   _thrusterAnimator: {fileID: 4111080577593081169}
 --- !u!1 &2639878533064335691
 GameObject:

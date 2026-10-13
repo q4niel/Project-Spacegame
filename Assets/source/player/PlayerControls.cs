@@ -121,6 +121,16 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""initialStateCheck"": false,
                     ""priority"": 0
+                },
+                {
+                    ""name"": ""boost"",
+                    ""type"": ""Button"",
+                    ""id"": ""01f45178-e969-44c7-93ff-b9c0d5fb2a9a"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
                 }
             ],
             ""bindings"": [
@@ -387,6 +397,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""bullet"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b996248c-ca95-4625-bf98-92f26d004df9"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""boost"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -398,6 +419,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_game_move = m_game.FindAction("move", throwIfNotFound: true);
         m_game_bullet = m_game.FindAction("bullet", throwIfNotFound: true);
         m_game_energyBolt = m_game.FindAction("energyBolt", throwIfNotFound: true);
+        m_game_boost = m_game.FindAction("boost", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
@@ -481,6 +503,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_game_move;
     private readonly InputAction m_game_bullet;
     private readonly InputAction m_game_energyBolt;
+    private readonly InputAction m_game_boost;
     /// <summary>
     /// Provides access to input actions defined in input action map "game".
     /// </summary>
@@ -504,6 +527,10 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "game/energyBolt".
         /// </summary>
         public InputAction @energyBolt => m_Wrapper.m_game_energyBolt;
+        /// <summary>
+        /// Provides access to the underlying input action "game/boost".
+        /// </summary>
+        public InputAction @boost => m_Wrapper.m_game_boost;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -539,6 +566,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @energyBolt.started += instance.OnEnergyBolt;
             @energyBolt.performed += instance.OnEnergyBolt;
             @energyBolt.canceled += instance.OnEnergyBolt;
+            @boost.started += instance.OnBoost;
+            @boost.performed += instance.OnBoost;
+            @boost.canceled += instance.OnBoost;
         }
 
         /// <summary>
@@ -559,6 +589,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @energyBolt.started -= instance.OnEnergyBolt;
             @energyBolt.performed -= instance.OnEnergyBolt;
             @energyBolt.canceled -= instance.OnEnergyBolt;
+            @boost.started -= instance.OnBoost;
+            @boost.performed -= instance.OnBoost;
+            @boost.canceled -= instance.OnBoost;
         }
 
         /// <summary>
@@ -620,5 +653,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnEnergyBolt(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "boost" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnBoost(InputAction.CallbackContext context);
     }
 }

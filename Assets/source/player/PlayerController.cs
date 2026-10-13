@@ -12,6 +12,10 @@ public class PlayerInput : MonoBehaviour {
     public void Start() {
         if (!TryGetComponent<PlayerMovement>(out movement))
             Debug.LogError("Player has no component of type 'PlayerMovement'");
+        else {
+            controls.game.boost.performed += ctx => movement.boost(true);
+            controls.game.boost.canceled += ctx => movement.boost(false);
+        }
 
         projPool = FindAnyObjectByType<ProjectilePool>();
         if (projPool == null)
