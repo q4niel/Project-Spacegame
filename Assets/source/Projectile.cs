@@ -94,15 +94,14 @@ public class Projectile : MonoBehaviour {
         newPos += _dir * _speed * Time.deltaTime;
         transform.position = newPos;
 
-        Vector2 screenPos = Camera.main.WorldToScreenPoint(transform.position);
+        float x = transform.position.x;
+        float y = transform.position.y;
 
-        if (screenPos.x > Screen.currentResolution.width
-        ||  screenPos.x < 0
-        ||  screenPos.y > Screen.currentResolution.height
-        || screenPos.y < 0
-        ) {
-            disable();
-        }
+        if (x > 10
+        ||  x < -10
+        ||  y > 6
+        ||  y < -6
+        ) disable();
     }
 
     public void OnTriggerEnter2D(Collider2D coll) {
