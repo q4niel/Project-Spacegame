@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
     [SerializeField] float speed;
+    public float getSpeed() => speed;
 
     Vector2 _dir = Vector2.zero;
     public Vector2 getDirection() => _dir;
