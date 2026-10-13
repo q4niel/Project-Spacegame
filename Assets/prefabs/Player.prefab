@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8504780429801053584}
   - component: {fileID: 4652523902658868836}
   - component: {fileID: 8678178215475033049}
-  - component: {fileID: 9139133656747030987}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -59,20 +58,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eb178923b74a3f1e87eaab2106d281e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  speed: 4
---- !u!114 &9139133656747030987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224195866955561402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e56b35e99032f1e788bf682562370a45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerDriftPhys
-  driftTime: 8
+  _maxVelocity: 6
+  _velocityDecreaseDuration: 0.5
 --- !u!1 &2722497333277841326
 GameObject:
   m_ObjectHideFlags: 0

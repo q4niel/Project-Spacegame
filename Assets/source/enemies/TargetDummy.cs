@@ -42,8 +42,4 @@ public class TargetDummy : MonoBehaviour, IDamagable {
     public void kill() {
         Destroy(gameObject);
     }
-
-    public void Update() {
-        Debug.Log($"Target Dummy: (shield={shield}) (health={health})");
-    }
 }

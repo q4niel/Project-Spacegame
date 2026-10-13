@@ -22,7 +22,7 @@ public class PlayerInput : MonoBehaviour {
     public void OnDisable() => controls.Disable();
 
     public void Update() {
-        movement.setDirection(controls.game.move.ReadValue<Vector2>());
+        movement.move(controls.game.move.ReadValue<Vector2>());
 
         if (controls.game.bullet.triggered)
             projPool.spawnBullet(transform.position, Vector2.right);
