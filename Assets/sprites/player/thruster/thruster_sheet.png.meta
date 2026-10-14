@@ -208,7 +208,9 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 25914f7662265d74dacef732dc3dd3b3, type: 3}
+      name: _emission
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
