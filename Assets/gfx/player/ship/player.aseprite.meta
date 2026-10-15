@@ -129,7 +129,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: player
     originalName: 
-    pivot: {x: 0.33333334, y: -1.1}
+    pivot: {x: 0.46428573, y: -0.75}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,8 +137,8 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 21
-      height: 10
+      width: 84
+      height: 12
     spriteID: 2c231080e23010338b77ed765f387815
     spriteBone: []
     spriteOutline: []
@@ -168,9 +168,9 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 9
-        y: 11
-        width: 21
-        height: 10
+        y: 9
+        width: 84
+        height: 12
       spriteId: 2c231080e23010338b77ed765f387815
     linkedCells: []
     tileCells: []
@@ -180,5 +180,5 @@ ScriptedImporter:
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
-  previousTextureSize: {x: 32, y: 32}
-  canvasSize: {x: 32, y: 32}
+  previousTextureSize: {x: 128, y: 32}
+  canvasSize: {x: 96, y: 32}

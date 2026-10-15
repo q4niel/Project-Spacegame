@@ -62,6 +62,10 @@ MonoBehaviour:
   _maxVelocity: 5
   _velocityDecreaseDuration: 0.5
   _boostVelocityMultiplier: 2
+  _shipRend: {fileID: 5255381332401830305}
+  _shipDefaultSprite: {fileID: 4334783836991956000, guid: 67c4d15f67fb32550b1c31d5b680e05b, type: 3}
+  _shipUpTiltSprite: {fileID: 7388399842426930641, guid: 67c4d15f67fb32550b1c31d5b680e05b, type: 3}
+  _shipDownTiltSprite: {fileID: 6757282713640645180, guid: 67c4d15f67fb32550b1c31d5b680e05b, type: 3}
   _thrusterAnimator: {fileID: 4111080577593081169}
 --- !u!1 &2639878533064335691
 GameObject:
@@ -259,12 +263,12 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 037ec59997dae9606b8cf31e2b8bf695, type: 3}
+  m_Sprite: {fileID: 4334783836991956000, guid: 67c4d15f67fb32550b1c31d5b680e05b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.99, y: 0.75}
+  m_Size: {x: 0.71875, y: 0.375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

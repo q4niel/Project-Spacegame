@@ -2,9 +2,18 @@ using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
+    [Header("Settings")]
     [SerializeField] float _maxVelocity;
     [SerializeField] float _velocityDecreaseDuration;
     [SerializeField] float _boostVelocityMultiplier;
+
+    [Header("Ship References")]
+    [SerializeField] SpriteRenderer _shipRend;
+    [SerializeField] Sprite _shipDefaultSprite;
+    [SerializeField] Sprite _shipUpTiltSprite;
+    [SerializeField] Sprite _shipDownTiltSprite;
+
+    [Header("Thruster References")]
     [SerializeField] Animator _thrusterAnimator;
 
     Vector2 _prevDir = Vector2.zero;
@@ -41,8 +50,14 @@ public class PlayerMovement : MonoBehaviour {
             _prevDir.y = dir.y;
             _yVel = _maxVelocity;
             _yVelElapsed = .0f;
+
+            if (dir.y > 0) _shipRend.sprite = _shipUpTiltSprite;
+            else _shipRend.sprite = _shipDownTiltSprite;
         }
-        else _decreaseVel(ref _yVel, ref _yVelElapsed);
+        else {
+            _decreaseVel(ref _yVel, ref _yVelElapsed);
+            _shipRend.sprite = _shipDefaultSprite;
+        }
 
         newPos.x += _prevDir.x * _xVel * (_isBoosting ? _boostVelocityMultiplier : 1) * Time.deltaTime;
         newPos.y += _prevDir.y * _yVel * Time.deltaTime;
