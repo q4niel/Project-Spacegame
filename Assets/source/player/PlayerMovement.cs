@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour {
     float _yVelElapsed = .0f;
 
     bool _isBoosting = false;
+    string _thrustStateId = "boost_state";
 
     public void boost(bool value) => _isBoosting = value;
 
@@ -27,15 +28,13 @@ public class PlayerMovement : MonoBehaviour {
             _xVel = _maxVelocity;
             _xVelElapsed = .0f;
 
-            if (_isBoosting) _thrusterAnimator.SetInteger (
-                "boost_state",
-                dir.x > 0 ? 1 : 2
-            );
-            else _thrusterAnimator.SetInteger("boost_state", 0);
+                
+            if (_isBoosting) _thrusterAnimator.SetInteger(_thrustStateId, dir.x > 0 ? 1 : -1);
+            else _thrusterAnimator.SetInteger(_thrustStateId, 0);
         }
         else {
             _decreaseVel(ref _xVel, ref _xVelElapsed);
-            _thrusterAnimator.SetInteger("boost_state", 0);
+            _thrusterAnimator.SetInteger(_thrustStateId, 0);
         }
 
         if (dir.y != 0) {
