@@ -5,7 +5,6 @@ public class Projectile : MonoBehaviour {
     BoxCollider2D _coll;
 
     Vector2 _dir;
-    DamageType _dmgType;
     int _dmg;
     float _speed;
 
@@ -13,7 +12,6 @@ public class Projectile : MonoBehaviour {
         public Sprite sprite;
         public Vector2 pos;
         public Vector2 dir;
-        public DamageType dmgType;
         public int dmg;
         public float speed;
 
@@ -21,14 +19,12 @@ public class Projectile : MonoBehaviour {
             Sprite sprite,
             Vector2 pos,
             Vector2 dir,
-            DamageType dmgType,
             int dmg,
             float speed
         ) {
             this.sprite = sprite;
             this.pos = pos;
             this.dir = dir;
-            this.dmgType = dmgType;
             this.dmg = dmg;
             this.speed = speed;
         }
@@ -50,7 +46,6 @@ public class Projectile : MonoBehaviour {
         _coll.size = factory.sprite.bounds.size;
         transform.position = factory.pos;
         _dir = factory.dir;
-        _dmgType = factory.dmgType;
         _dmg = factory.dmg;
         _speed = factory.speed;
 
@@ -107,6 +102,6 @@ public class Projectile : MonoBehaviour {
     public void OnTriggerEnter2D(Collider2D coll) {
         IDamagable iDmg = coll.GetComponent<IDamagable>();
         if (iDmg == null) return;
-        iDmg.damage(_dmg, _dmgType);
+        iDmg.damage(_dmg);
     }
 }

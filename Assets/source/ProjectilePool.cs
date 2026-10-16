@@ -4,44 +4,30 @@ using UnityEngine;
 
 public class ProjectilePool : MonoBehaviour {
     [SerializeField] Sprite _bulletSprite;
-    [SerializeField] Sprite _energyBoltSprite;
 
     List<GameObject> _container = new List<GameObject>();
 
     public enum Spritey {
-        Bullet,
-        EnergyBolt
+        Bullet
     }
 
     Dictionary<Spritey, Sprite> _sprites = new Dictionary<Spritey, Sprite>();
 
     void Awake() {
         _sprites.Add(Spritey.Bullet, _bulletSprite);
-        _sprites.Add(Spritey.EnergyBolt, _energyBoltSprite);
     }
 
     public void spawnBullet(Vector2 pos, Vector2 dir) => _spawn (
         pos,
         dir,
-        DamageType.Physical,
         1,
         8,
         Spritey.Bullet
     );
 
-    public void spawnEnergyBolt(Vector2 pos, Vector2 dir) => _spawn (
-        pos,
-        dir,
-        DamageType.Energy,
-        1,
-        8,
-        Spritey.EnergyBolt
-    );
-
     void _spawn (
         Vector2 pos,
         Vector2 dir,
-        DamageType dmgType,
         int dmg,
         float speed,
         Spritey spritey
@@ -50,7 +36,6 @@ public class ProjectilePool : MonoBehaviour {
             _sprites[spritey],
             pos,
             dir,
-            dmgType,
             dmg,
             speed
         );

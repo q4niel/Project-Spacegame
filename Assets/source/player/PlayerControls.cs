@@ -113,16 +113,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""priority"": 0
                 },
                 {
-                    ""name"": ""energyBolt"",
-                    ""type"": ""Button"",
-                    ""id"": ""a193f3e8-a0d6-459d-878f-67cc275c8f46"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false,
-                    ""priority"": 0
-                },
-                {
                     ""name"": ""boost"",
                     ""type"": ""Button"",
                     ""id"": ""01f45178-e969-44c7-93ff-b9c0d5fb2a9a"",
@@ -356,28 +346,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""77aa6a59-ff6e-4b46-a79e-96091c9040d3"",
-                    ""path"": ""<Keyboard>/leftAlt"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""energyBolt"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""ab59f69b-b469-4065-807b-0f343733b659"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""energyBolt"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""6f379d47-8951-4f84-8e69-c74a4661dd72"",
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
@@ -418,7 +386,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_game = asset.FindActionMap("game", throwIfNotFound: true);
         m_game_move = m_game.FindAction("move", throwIfNotFound: true);
         m_game_bullet = m_game.FindAction("bullet", throwIfNotFound: true);
-        m_game_energyBolt = m_game.FindAction("energyBolt", throwIfNotFound: true);
         m_game_boost = m_game.FindAction("boost", throwIfNotFound: true);
     }
 
@@ -502,7 +469,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private List<IGameActions> m_GameActionsCallbackInterfaces = new List<IGameActions>();
     private readonly InputAction m_game_move;
     private readonly InputAction m_game_bullet;
-    private readonly InputAction m_game_energyBolt;
     private readonly InputAction m_game_boost;
     /// <summary>
     /// Provides access to input actions defined in input action map "game".
@@ -523,10 +489,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "game/bullet".
         /// </summary>
         public InputAction @bullet => m_Wrapper.m_game_bullet;
-        /// <summary>
-        /// Provides access to the underlying input action "game/energyBolt".
-        /// </summary>
-        public InputAction @energyBolt => m_Wrapper.m_game_energyBolt;
         /// <summary>
         /// Provides access to the underlying input action "game/boost".
         /// </summary>
@@ -563,9 +525,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @bullet.started += instance.OnBullet;
             @bullet.performed += instance.OnBullet;
             @bullet.canceled += instance.OnBullet;
-            @energyBolt.started += instance.OnEnergyBolt;
-            @energyBolt.performed += instance.OnEnergyBolt;
-            @energyBolt.canceled += instance.OnEnergyBolt;
             @boost.started += instance.OnBoost;
             @boost.performed += instance.OnBoost;
             @boost.canceled += instance.OnBoost;
@@ -586,9 +545,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @bullet.started -= instance.OnBullet;
             @bullet.performed -= instance.OnBullet;
             @bullet.canceled -= instance.OnBullet;
-            @energyBolt.started -= instance.OnEnergyBolt;
-            @energyBolt.performed -= instance.OnEnergyBolt;
-            @energyBolt.canceled -= instance.OnEnergyBolt;
             @boost.started -= instance.OnBoost;
             @boost.performed -= instance.OnBoost;
             @boost.canceled -= instance.OnBoost;
@@ -646,13 +602,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnBullet(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "energyBolt" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnEnergyBolt(InputAction.CallbackContext context);
         /// <summary>
         /// Method invoked when associated input action "boost" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>

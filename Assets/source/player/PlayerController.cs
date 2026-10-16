@@ -30,8 +30,5 @@ public class PlayerInput : MonoBehaviour {
 
         if (controls.game.bullet.triggered)
             projPool.spawnBullet(transform.position, Vector2.right);
-
-        if (controls.game.energyBolt.triggered)
-            projPool.spawnEnergyBolt(transform.position, Vector2.right);
     }
 }

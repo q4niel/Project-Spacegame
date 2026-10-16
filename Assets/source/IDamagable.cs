@@ -1,7 +1,7 @@
 using UnityEngine;
 
 interface IDamagable {
-    void damage(int value, DamageType type);
-    void heal(int value, DamageType type);
+    void damage(int value);
+    void heal(int value);
     void kill();
 }
