@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ac1d8a05205d93d5a9fdd562726efa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProjectilePool
-  _bulletSprite: {fileID: -800928512638074294, guid: efec606a58938c9a3b0a25bbb6b51d8c, type: 3}
-  _energyBoltSprite: {fileID: -7709373147095373039, guid: 8b26c271c42ade022b142bd3fe3debb7, type: 3}
+  _laserSprite: {fileID: 21300000, guid: f97cd440b83048a66a51159f4101eba1, type: 3}
+  _laserDarkVioletMaterial: {fileID: 2100000, guid: aff9fd80c8973399c83d2bbbff095aac, type: 2}

@@ -3,37 +3,34 @@ using System.Linq;
 using UnityEngine;
 
 public class ProjectilePool : MonoBehaviour {
-    [SerializeField] Sprite _bulletSprite;
+    [Header("Laser")]
+    [SerializeField] Sprite _laserSprite;
+    [SerializeField] Material _laserDarkVioletMaterial;
 
     List<GameObject> _container = new List<GameObject>();
 
-    public enum Spritey {
-        Bullet
+    public void spawnDarkVioletLaser(Vector2 pos, Vector2 dir) {
+        _spawn (
+            pos,
+            dir,
+            1,
+            8,
+            _laserSprite,
+            _laserDarkVioletMaterial
+        );
     }
-
-    Dictionary<Spritey, Sprite> _sprites = new Dictionary<Spritey, Sprite>();
-
-    void Awake() {
-        _sprites.Add(Spritey.Bullet, _bulletSprite);
-    }
-
-    public void spawnBullet(Vector2 pos, Vector2 dir) => _spawn (
-        pos,
-        dir,
-        1,
-        8,
-        Spritey.Bullet
-    );
 
     void _spawn (
         Vector2 pos,
         Vector2 dir,
         int dmg,
         float speed,
-        Spritey spritey
+        Sprite sprite,
+        Material mat
     ) {
         Projectile.Factory factory = new Projectile.Factory (
-            _sprites[spritey],
+            sprite,
+            mat,
             pos,
             dir,
             dmg,

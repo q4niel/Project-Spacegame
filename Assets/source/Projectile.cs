@@ -10,6 +10,7 @@ public class Projectile : MonoBehaviour {
 
     public class Factory {
         public Sprite sprite;
+        public Material mat;
         public Vector2 pos;
         public Vector2 dir;
         public int dmg;
@@ -17,12 +18,14 @@ public class Projectile : MonoBehaviour {
 
         public Factory (
             Sprite sprite,
+            Material mat,
             Vector2 pos,
             Vector2 dir,
             int dmg,
             float speed
         ) {
             this.sprite = sprite;
+            this.mat = mat;
             this.pos = pos;
             this.dir = dir;
             this.dmg = dmg;
@@ -43,6 +46,7 @@ public class Projectile : MonoBehaviour {
 
     public void enable(Factory factory) {
         _rend.sprite = factory.sprite;
+        _rend.material = factory.mat;
         _coll.size = factory.sprite.bounds.size;
         transform.position = factory.pos;
         _dir = factory.dir;
@@ -53,22 +57,22 @@ public class Projectile : MonoBehaviour {
 
         switch (_dir.x, _dir.y) {
             case (0.0f, 1.0f): {
-                rot = 0.0f;
-                break;
-            }
-
-            case (0.0f, -1.0f): {
-                rot = 180.0f;
-                break;
-            }
-
-            case (-1.0f, 0.0f): {
                 rot = 90.0f;
                 break;
             }
 
-            case (1.0f, 0.0f): {
+            case (0.0f, -1.0f): {
                 rot = -90.0f;
+                break;
+            }
+
+            case (-1.0f, 0.0f): {
+                rot = 180.0f;
+                break;
+            }
+
+            case (1.0f, 0.0f): {
+                rot = 0.0f;
                 break;
             }
 
