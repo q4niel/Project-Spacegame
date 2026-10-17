@@ -9,16 +9,15 @@ public class VeylithFighterBase : MonoBehaviour, IDamagable {
     [SerializeField] float _verticalBounceVelocity;
     [SerializeField] float _verticalBounceLimit;
 
-    Animator _anim = null;
+    [Header("Animations")]
+    [SerializeField] Animator _shipAnim;
+    [SerializeField] Animator _vfxAnim;
+
     GameObject _player = null;
     bool _bounceDir = false;
     bool _exploding = false;
 
     public void Start() {
-        _anim = GetComponent<Animator>();
-        if (_anim == null)
-            Debug.LogWarning("VeylithFighterBase could not find component of type 'Animator'");
-
         _player = GameObject.FindWithTag("Player");
         if (_player == null)
             Debug.LogWarning("VeylithFighterBase could not find the GameObject with tag 'Player'");
@@ -26,7 +25,8 @@ public class VeylithFighterBase : MonoBehaviour, IDamagable {
 
     public void Update() {
         if (_exploding
-        &&  _anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1.0f
+        &&  _shipAnim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1.0f
+        &&  _vfxAnim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1.0f
         ) Destroy(gameObject);
 
         Vector2 newPos = transform.position;
@@ -53,7 +53,8 @@ public class VeylithFighterBase : MonoBehaviour, IDamagable {
         _health -= value;
         if (_health > 0) return;
 
-        _anim.SetBool("explode", true);
+        _shipAnim.SetBool("explode", true);
+        _vfxAnim.SetBool("explode", true);
         _exploding = true;
     }
 

@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: VFMK1ThrusterMaterial
+  m_Name: VFMK1VFXMaterial
   m_Shader: {fileID: -6465566751694194690, guid: 0cddc4688bdebeff2b285103b09fdc4b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0

@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 93795cc281da9d25cada8e41b1d0f7fb
+guid: 65c3890fabde96332a1d201b3096497b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3055314045764935564
-    second: vf_mk_1_thruster_0
+      213: -8868684634685187360
+    second: vf_mk_1_vfx_emission_0
   - first:
-      213: 7077127234457239140
-    second: vf_mk_1_thruster_1
+      213: -2234129309964714134
+    second: vf_mk_1_vfx_emission_1
   - first:
-      213: 2279918841046390956
-    second: vf_mk_1_thruster_2
+      213: 3195683707443603882
+    second: vf_mk_1_vfx_emission_2
   - first:
-      213: 4035768249868389322
-    second: vf_mk_1_thruster_3
+      213: -6336558924147938254
+    second: vf_mk_1_vfx_emission_3
+  - first:
+      213: -1483133462387037962
+    second: vf_mk_1_vfx_emission_4
+  - first:
+      213: 8336530084541003540
+    second: vf_mk_1_vfx_emission_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,7 +117,95 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vf_mk_1_thruster_0
+      name: vf_mk_1_vfx_emission_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eadf94205a1ce480800000000000000
+      internalID: -8868684634685187360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vf_mk_1_vfx_emission_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6fb341ca37cef0e0800000000000000
+      internalID: -2234129309964714134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vf_mk_1_vfx_emission_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9eda48669595c20800000000000000
+      internalID: 3195683707443603882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vf_mk_1_vfx_emission_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ca4d32b350018a0800000000000000
+      internalID: -6336558924147938254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vf_mk_1_vfx_emission_4
       rect:
         serializedVersion: 2
         x: 0
@@ -126,14 +220,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8f9417dfe7a66a20800000000000000
-      internalID: 3055314045764935564
+      spriteID: 6f8ece359f9da6be0800000000000000
+      internalID: -1483133462387037962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vf_mk_1_thruster_1
+      name: vf_mk_1_vfx_emission_5
       rect:
         serializedVersion: 2
         x: 32
@@ -148,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46ef01839b1073260800000000000000
-      internalID: 7077127234457239140
+      spriteID: 4177c6c61fd41b370800000000000000
+      internalID: 8336530084541003540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vf_mk_1_thruster_2
+      name: vf_mk_1_vfx_emission_6
       rect:
         serializedVersion: 2
         x: 64
@@ -168,16 +262,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ca85a4d3b16e3af10800000000000000
-      internalID: 2279918841046390956
+      spriteID: 5a79f9cbaf0c99e8e9a963e826df4342
+      internalID: 1107672239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vf_mk_1_thruster_3
+      name: vf_mk_1_vfx_emission_7
       rect:
         serializedVersion: 2
         x: 96
@@ -190,10 +284,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: acb843147dde10830800000000000000
-      internalID: 4035768249868389322
+      spriteID: ef466546e96e8842bba605e1ebb5c0d9
+      internalID: -1985009543
       vertices: []
       indices: 
       edges: []
@@ -202,24 +296,26 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 728113cf7cf2e82deb8695b914e290e8
+    spriteID: 97e6f97895bd95f32b6ba2c667c114ec
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: 2090da7abfdb8aa3eb935f950c7840be, type: 3}
-      name: _Emission
+    secondaryTextures: []
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      vf_mk_1_thruster_0: 3055314045764935564
-      vf_mk_1_thruster_1: 7077127234457239140
-      vf_mk_1_thruster_2: 2279918841046390956
-      vf_mk_1_thruster_3: 4035768249868389322
+      vf_mk_1_vfx_emission_0: -8868684634685187360
+      vf_mk_1_vfx_emission_1: -2234129309964714134
+      vf_mk_1_vfx_emission_2: 3195683707443603882
+      vf_mk_1_vfx_emission_3: -6336558924147938254
+      vf_mk_1_vfx_emission_4: -1483133462387037962
+      vf_mk_1_vfx_emission_5: 8336530084541003540
+      vf_mk_1_vfx_emission_6: 1107672239
+      vf_mk_1_vfx_emission_7: -1985009543
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

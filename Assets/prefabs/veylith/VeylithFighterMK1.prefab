@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 977216080001774743}
   - component: {fileID: 4618781374711294500}
   m_Layer: 0
-  m_Name: Thruster
+  m_Name: VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 3055314045764935564, guid: 93795cc281da9d25cada8e41b1d0f7fb, type: 3}
+  m_Sprite: {fileID: -4903328042672673464, guid: 6bd3cf038e37a6e0cb372022adda2389, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -298,6 +298,8 @@ MonoBehaviour:
   _targetHorizontalDistance: 5
   _verticalBounceVelocity: 2
   _verticalBounceLimit: 0.8
+  _shipAnim: {fileID: 2461852196900620318}
+  _vfxAnim: {fileID: 4618781374711294500}
 --- !u!50 &7804267919818139579
 Rigidbody2D:
   serializedVersion: 5
