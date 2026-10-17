@@ -6,37 +6,32 @@ public class ProjectilePool : MonoBehaviour {
     [Header("Laser")]
     [SerializeField] int _laserDamage;
     [SerializeField] float _laserSpeed;
+    [SerializeField] Vector2 _laserColliderSize;
+    [SerializeField] Vector2 _laserColliderOffset;
     [SerializeField] Sprite _laserSprite;
     [SerializeField] Material _laserDarkVioletMaterial;
 
     List<GameObject> _container = new List<GameObject>();
 
-    public void spawnDarkVioletLaser(Vector2 pos, Vector2 dir) => _spawn (
+    public void spawnLaserDarkViolet(Vector2 pos, Vector2 dir)
+        => spawnLaser(pos, dir, _laserDarkVioletMaterial);
+
+    public void spawnLaser (
+        Vector2 pos,
+        Vector2 dir,
+        Material mat
+    ) => _spawn(new Projectile.Factory (
+        _laserSprite,
+        mat,
         pos,
         dir,
         _laserDamage,
         _laserSpeed,
-        _laserSprite,
-        _laserDarkVioletMaterial
-    );
+        _laserColliderSize,
+        _laserColliderOffset
+    ));
 
-    void _spawn (
-        Vector2 pos,
-        Vector2 dir,
-        int dmg,
-        float speed,
-        Sprite sprite,
-        Material mat
-    ) {
-        Projectile.Factory factory = new Projectile.Factory (
-            sprite,
-            mat,
-            pos,
-            dir,
-            dmg,
-            speed
-        );
-
+    void _spawn(Projectile.Factory factory) {
         foreach (GameObject proj in _container) {
             if (proj.activeInHierarchy) continue;
 

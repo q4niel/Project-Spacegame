@@ -15,6 +15,8 @@ public class Projectile : MonoBehaviour {
         public Vector2 dir;
         public int dmg;
         public float speed;
+        public Vector2 collSize;
+        public Vector2 collOffset;
 
         public Factory (
             Sprite sprite,
@@ -22,7 +24,9 @@ public class Projectile : MonoBehaviour {
             Vector2 pos,
             Vector2 dir,
             int dmg,
-            float speed
+            float speed,
+            Vector2 collSize,
+            Vector2 collOffset
         ) {
             this.sprite = sprite;
             this.mat = mat;
@@ -30,6 +34,8 @@ public class Projectile : MonoBehaviour {
             this.dir = dir;
             this.dmg = dmg;
             this.speed = speed;
+            this.collSize = collSize;
+            this.collOffset = collOffset;
         }
     }
 
@@ -47,11 +53,12 @@ public class Projectile : MonoBehaviour {
     public void enable(Factory factory) {
         _rend.sprite = factory.sprite;
         _rend.material = factory.mat;
-        _coll.size = factory.sprite.bounds.size;
         transform.position = factory.pos;
         _dir = factory.dir;
         _dmg = factory.dmg;
         _speed = factory.speed;
+        _coll.size = factory.collSize;
+        _coll.offset = factory.collOffset;
 
         float rot = 0.0f;
 

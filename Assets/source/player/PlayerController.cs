@@ -29,6 +29,6 @@ public class PlayerInput : MonoBehaviour {
         movement.move(controls.game.move.ReadValue<Vector2>());
 
         if (controls.game.bullet.triggered)
-            projPool.spawnDarkVioletLaser(transform.position, Vector2.right);
+            projPool.spawnLaserDarkViolet(transform.position, Vector2.right);
     }
 }
