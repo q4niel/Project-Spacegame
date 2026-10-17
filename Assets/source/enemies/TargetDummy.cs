@@ -9,11 +9,10 @@ public class TargetDummy : MonoBehaviour, IDamagable {
         kill();
     }
 
-    public void heal(int value) {
-        health += value;
-    }
+    public void heal(int value) => health += value;
 
-    public void kill() {
-        Destroy(gameObject);
-    }
+    public void kill() => Destroy(gameObject);
+
+    public void Update()
+        => Debug.Log($"TargetDummy Health: {health}");
 }
