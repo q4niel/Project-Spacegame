@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class ProjectilePool : MonoBehaviour {
     [Header("Laser")]
+    [SerializeField] int _laserDamage;
+    [SerializeField] float _laserSpeed;
     [SerializeField] Sprite _laserSprite;
     [SerializeField] Material _laserDarkVioletMaterial;
 
     List<GameObject> _container = new List<GameObject>();
 
-    public void spawnDarkVioletLaser(Vector2 pos, Vector2 dir) {
-        _spawn (
-            pos,
-            dir,
-            1,
-            8,
-            _laserSprite,
-            _laserDarkVioletMaterial
-        );
-    }
+    public void spawnDarkVioletLaser(Vector2 pos, Vector2 dir) => _spawn (
+        pos,
+        dir,
+        _laserDamage,
+        _laserSpeed,
+        _laserSprite,
+        _laserDarkVioletMaterial
+    );
 
     void _spawn (
         Vector2 pos,

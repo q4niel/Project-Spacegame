@@ -44,5 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ac1d8a05205d93d5a9fdd562726efa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProjectilePool
+  _laserDamage: 1
+  _laserSpeed: 12
   _laserSprite: {fileID: 21300000, guid: f97cd440b83048a66a51159f4101eba1, type: 3}
   _laserDarkVioletMaterial: {fileID: 2100000, guid: aff9fd80c8973399c83d2bbbff095aac, type: 2}
