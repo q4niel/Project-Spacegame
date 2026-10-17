@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour {
     Vector2 _dir;
     int _dmg;
     float _speed;
+    string _targetTag;
 
     public class Factory {
         public Sprite sprite;
@@ -17,6 +18,7 @@ public class Projectile : MonoBehaviour {
         public float speed;
         public Vector2 collSize;
         public Vector2 collOffset;
+        public string targetTag;
 
         public Factory (
             Sprite sprite,
@@ -26,7 +28,8 @@ public class Projectile : MonoBehaviour {
             int dmg,
             float speed,
             Vector2 collSize,
-            Vector2 collOffset
+            Vector2 collOffset,
+            string targetTag
         ) {
             this.sprite = sprite;
             this.mat = mat;
@@ -36,6 +39,7 @@ public class Projectile : MonoBehaviour {
             this.speed = speed;
             this.collSize = collSize;
             this.collOffset = collOffset;
+            this.targetTag = targetTag;
         }
     }
 
@@ -59,6 +63,7 @@ public class Projectile : MonoBehaviour {
         _speed = factory.speed;
         _coll.size = factory.collSize;
         _coll.offset = factory.collOffset;
+        _targetTag = factory.targetTag;
 
         float rot = 0.0f;
 
@@ -111,7 +116,10 @@ public class Projectile : MonoBehaviour {
     }
 
     public void OnTriggerEnter2D(Collider2D coll) {
+        if (coll.gameObject.tag != _targetTag) return;
+
         IDamagable iDmg = coll.GetComponent<IDamagable>();
+
         if (iDmg == null) return;
         iDmg.damage(_dmg);
     }

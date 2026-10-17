@@ -14,16 +14,17 @@ public class ProjectilePool : MonoBehaviour {
 
     List<GameObject> _container = new List<GameObject>();
 
-    public void spawnLaserDarkViolet(Vector2 pos, Vector2 dir)
-        => spawnLaser(pos, dir, _laserDarkVioletMaterial);
+    public void spawnLaserDarkViolet(Vector2 pos, Vector2 dir, string targetTag)
+        => spawnLaser(pos, dir, _laserDarkVioletMaterial, targetTag);
 
-    public void spawnLaserLime(Vector2 pos, Vector2 dir)
-        => spawnLaser(pos, dir, _laserLimeMaterial);
+    public void spawnLaserLime(Vector2 pos, Vector2 dir, string targetTag)
+        => spawnLaser(pos, dir, _laserLimeMaterial, targetTag);
 
     public void spawnLaser (
         Vector2 pos,
         Vector2 dir,
-        Material mat
+        Material mat,
+        string targetTag
     ) => _spawn(new Projectile.Factory (
         _laserSprite,
         mat,
@@ -32,7 +33,8 @@ public class ProjectilePool : MonoBehaviour {
         _laserDamage,
         _laserSpeed,
         _laserColliderSize,
-        _laserColliderOffset
+        _laserColliderOffset,
+        targetTag
     ));
 
     void _spawn(Projectile.Factory factory) {

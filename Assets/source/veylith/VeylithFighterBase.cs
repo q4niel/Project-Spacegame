@@ -59,7 +59,7 @@ public class VeylithFighterBase : MonoBehaviour, IDamagable {
 
         _attackTimer += Time.deltaTime;
         if (_attackTimer >= _attackTime) {
-            _projPool.spawnLaserLime(transform.position, Vector2.left);
+            _projPool.spawnLaserLime(transform.position, Vector2.left, "Player");
             _attackTimer = .0f;
         }
     }
