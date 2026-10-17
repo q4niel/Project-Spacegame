@@ -293,6 +293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VeylithFighterMK1
   _health: 2
+  _attackTime: 2
   _maxHorizontalVelocity: 2
   _maxHorizontalRepositionVelocityMultiplier: 2
   _targetHorizontalDistance: 5

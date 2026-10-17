@@ -1,7 +1,10 @@
 using UnityEngine;
 
 public class VeylithFighterBase : MonoBehaviour, IDamagable {
+    [Header("General")]
     [SerializeField] int _health;
+    [SerializeField] float _attackTime;
+
     [Header("Movement")]
     [SerializeField] float _maxHorizontalVelocity;
     [SerializeField] float _maxHorizontalRepositionVelocityMultiplier;
@@ -14,13 +17,19 @@ public class VeylithFighterBase : MonoBehaviour, IDamagable {
     [SerializeField] Animator _vfxAnim;
 
     GameObject _player = null;
+    ProjectilePool _projPool = null;
     bool _bounceDir = false;
     bool _exploding = false;
+    float _attackTimer = .0f;
 
     public void Start() {
         _player = GameObject.FindWithTag("Player");
         if (_player == null)
             Debug.LogWarning("VeylithFighterBase could not find the GameObject with tag 'Player'");
+
+        _projPool = FindAnyObjectByType<ProjectilePool>();
+        if (_projPool == null)
+            Debug.LogWarning("VeylithFighterBase could not find object of type 'ProjectilePool'");
     }
 
     public void Update() {
@@ -47,6 +56,12 @@ public class VeylithFighterBase : MonoBehaviour, IDamagable {
             newPos.x += _maxHorizontalVelocity * _maxHorizontalRepositionVelocityMultiplier * Time.deltaTime;
 
         transform.position = newPos;
+
+        _attackTimer += Time.deltaTime;
+        if (_attackTimer >= _attackTime) {
+            _projPool.spawnLaserLime(transform.position, Vector2.left);
+            _attackTimer = .0f;
+        }
     }
 
     public void damage(int value) {

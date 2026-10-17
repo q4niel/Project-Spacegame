@@ -10,11 +10,15 @@ public class ProjectilePool : MonoBehaviour {
     [SerializeField] Vector2 _laserColliderOffset;
     [SerializeField] Sprite _laserSprite;
     [SerializeField] Material _laserDarkVioletMaterial;
+    [SerializeField] Material _laserLimeMaterial;
 
     List<GameObject> _container = new List<GameObject>();
 
     public void spawnLaserDarkViolet(Vector2 pos, Vector2 dir)
         => spawnLaser(pos, dir, _laserDarkVioletMaterial);
+
+    public void spawnLaserLime(Vector2 pos, Vector2 dir)
+        => spawnLaser(pos, dir, _laserLimeMaterial);
 
     public void spawnLaser (
         Vector2 pos,

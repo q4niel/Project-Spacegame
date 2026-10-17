@@ -50,3 +50,4 @@ MonoBehaviour:
   _laserColliderOffset: {x: 0, y: -0.015}
   _laserSprite: {fileID: 21300000, guid: f97cd440b83048a66a51159f4101eba1, type: 3}
   _laserDarkVioletMaterial: {fileID: 2100000, guid: aff9fd80c8973399c83d2bbbff095aac, type: 2}
+  _laserLimeMaterial: {fileID: 2100000, guid: 20e9bad3e6339af27bdb131915cb15ef, type: 2}
