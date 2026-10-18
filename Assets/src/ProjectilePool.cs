@@ -12,6 +12,15 @@ public class ProjectilePool : MonoBehaviour {
     [SerializeField] Material _laserDarkVioletMaterial;
     [SerializeField] Material _laserLimeMaterial;
 
+    [Header("Veylith Rocket")]
+    [SerializeField] int _veylithRocketDamage;
+    [SerializeField] float _veylithRocketSpeed;
+    [SerializeField] Vector2 _veylithRocketColliderSize;
+    [SerializeField] Vector2 _veylithRocketColliderOffset;
+    [SerializeField] AnimationClip _veylithRocketDeployAnimClip;
+    [SerializeField] AnimationClip _veylithRocketFlightAnimClip;
+    [SerializeField] Material _veylithRocketMaterial;
+
     List<GameObject> _container = new List<GameObject>();
 
     public void spawnLaserDarkViolet(Vector2 pos, Vector2 dir, string targetTag)
