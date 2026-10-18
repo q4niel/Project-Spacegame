@@ -158,7 +158,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: thruster_anim_controller
+  m_Name: player_vfx_anim_ctrl
   serializedVersion: 6
   m_AnimatorParameters:
   - m_Name: boost_state

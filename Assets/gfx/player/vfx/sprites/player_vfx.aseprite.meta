@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 96b1e8ab52c171f868598e9543f73bdd
+guid: 4adb0a760b9841068b251dea5f9d985f
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,7 +127,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: thruster_sheet_emission
+  - name: thruster_sheet
     originalName: 
     pivot: {x: 0.5981308, y: -0.17142858}
     alignment: 9
@@ -139,7 +139,7 @@ ScriptedImporter:
       y: 4
       width: 107
       height: 70
-    spriteID: 99dfa2aca8df76d9390c0deb599b98b0
+    spriteID: 85088d2fbcadd35be864ccbcc15c2f31
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,17 +153,17 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 969876125
+      value0: 2164515475
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: thruster_sheet_emission
+    name: thruster_sheet
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: thruster_sheet_emission
+    - name: player_vfx
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -171,7 +171,7 @@ ScriptedImporter:
         y: 12
         width: 107
         height: 70
-      spriteId: 99dfa2aca8df76d9390c0deb599b98b0
+      spriteId: 85088d2fbcadd35be864ccbcc15c2f31
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
