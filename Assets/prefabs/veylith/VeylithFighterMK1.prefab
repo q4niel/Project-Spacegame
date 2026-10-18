@@ -127,8 +127,8 @@ GameObject:
   - component: {fileID: 2394459640644832679}
   - component: {fileID: 2461852196900620318}
   - component: {fileID: 3108905563970629017}
-  - component: {fileID: 5696582631775644475}
   - component: {fileID: 7804267919818139579}
+  - component: {fileID: 3674860904284776397}
   m_Layer: 0
   m_Name: VeylithFighterMK1
   m_TagString: Enemy
@@ -280,27 +280,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.28, y: 0.28}
   m_EdgeRadius: 0
---- !u!114 &5696582631775644475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6904538879715908089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d49e8ba24d1dcace90215802ba49f57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::VeylithFighterMK1
-  _health: 2
-  _attackTime: 2
-  _maxHorizontalVelocity: 2
-  _maxHorizontalRepositionVelocityMultiplier: 2
-  _targetHorizontalDistance: 5
-  _verticalBounceVelocity: 2
-  _verticalBounceLimit: 0.8
-  _shipAnim: {fileID: 2461852196900620318}
-  _vfxAnim: {fileID: 4618781374711294500}
 --- !u!50 &7804267919818139579
 Rigidbody2D:
   serializedVersion: 5
@@ -328,3 +307,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3674860904284776397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6904538879715908089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6236420dac1eef788a4ce3185a9c1376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VeylithFighter
+  _data: {fileID: 0}
+  _shipAnim: {fileID: 2461852196900620318}
+  _vfxAnim: {fileID: 4618781374711294500}
