@@ -90,7 +90,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!95 &4618781374711294500
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 7804267919818139579}
   - component: {fileID: 3674860904284776397}
   m_Layer: 0
-  m_Name: VeylithFighterMK1
+  m_Name: VeylithFighter
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,7 +201,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1299801041737690916, guid: 6f5cab544b5c3446d9981788233a5b71, type: 3}
+  m_Sprite: {fileID: -8275996417557323177, guid: 0412a522f6399491ea3569fad482f741, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

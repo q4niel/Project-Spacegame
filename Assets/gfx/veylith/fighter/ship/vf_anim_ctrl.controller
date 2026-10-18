@@ -32,7 +32,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vf_mk_1_ship_explode_anim
+  m_Name: explosion
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -45,7 +45,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e85e6f858eb7b42dbafb140434adcb5b, type: 2}
+  m_Motion: {fileID: 7400000, guid: 8c0a8fc40ec3760c68a2953cd0346497, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -84,7 +84,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vf_mk_1_anim_controller
+  m_Name: vf_anim_ctrl
   serializedVersion: 6
   m_AnimatorParameters:
   - m_Name: explode

@@ -1,10 +1,40 @@
 fileFormatVersion: 2
-guid: 6f5cab544b5c3446d9981788233a5b71
+guid: 0cc82e6585f74db80ab8ea753245f571
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1299801041737690916
-    second: vf_mk_1_0
+      213: 2843197301891660745
+    second: vf_vfx_0
+  - first:
+      213: 4735935973955576590
+    second: vf_vfx_1
+  - first:
+      213: 7131150803798236285
+    second: vf_vfx_2
+  - first:
+      213: -3009964046987531815
+    second: vf_vfx_3
+  - first:
+      213: -2380608403779207364
+    second: vf_vfx_4
+  - first:
+      213: 3763493993505968808
+    second: vf_vfx_5
+  - first:
+      213: -5382959399232532601
+    second: vf_vfx_6
+  - first:
+      213: -1869340418501281707
+    second: vf_vfx_7
+  - first:
+      213: -961097463653185499
+    second: vf_vfx_8
+  - first:
+      213: -1435596971470562393
+    second: vf_vfx_9
+  - first:
+      213: -814434187890787258
+    second: vf_vfx_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,7 +132,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vf_mk_1_0
+      name: vf_vfx_0
       rect:
         serializedVersion: 2
         x: 0
@@ -117,14 +147,80 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 42f257b2922d90210800000000000000
-      internalID: 1299801041737690916
+      spriteID: 9cbf995d1e0157720800000000000000
+      internalID: 2843197301891660745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vf_mk_1_1
+      name: vf_vfx_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e03ad9e1dac69b140800000000000000
+      internalID: 4735935973955576590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vf_vfx_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c9224afdfe6f260800000000000000
+      internalID: 7131150803798236285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vf_vfx_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d96c9095a57a36d0800000000000000
+      internalID: -3009964046987531815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vf_vfx_4
       rect:
         serializedVersion: 2
         x: 0
@@ -137,16 +233,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 39044102c35b2f95e9c6c03807cbc5ee
-      internalID: 1287527917
+      spriteID: c3f3e6f054166fed0800000000000000
+      internalID: -2380608403779207364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vf_mk_1_2
+      name: vf_vfx_5
       rect:
         serializedVersion: 2
         x: 32
@@ -159,16 +255,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0f96ecc600a6950a98e85d04fd5016b4
-      internalID: -247951110
+      spriteID: 8a25d35e8dd9a3430800000000000000
+      internalID: 3763493993505968808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vf_mk_1_3
+      name: vf_vfx_6
       rect:
         serializedVersion: 2
         x: 64
@@ -181,16 +277,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: aa46ff45f5d0d9f33ad60d3dbb5ccd09
-      internalID: 2141820681
+      spriteID: 78f056052f2eb45b0800000000000000
+      internalID: -5382959399232532601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vf_mk_1_4
+      name: vf_vfx_7
       rect:
         serializedVersion: 2
         x: 96
@@ -203,10 +299,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e3939af316c3988e6abe668bc4011eec
-      internalID: -930468523
+      spriteID: 55873f62bc4ce06e0800000000000000
+      internalID: -1869340418501281707
       vertices: []
       indices: 
       edges: []
@@ -215,23 +311,28 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 16e0270cd2cd67a7f9bf6b1aaed26db1
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 48e599550d5cf9d7882bf4e5eeb0c53b, type: 3}
+      name: _Emission
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      vf_mk_1_0: 1299801041737690916
-      vf_mk_1_1: 1287527917
-      vf_mk_1_2: -247951110
-      vf_mk_1_3: 2141820681
-      vf_mk_1_4: -930468523
+      vf_vfx_0: 2843197301891660745
+      vf_vfx_1: 4735935973955576590
+      vf_vfx_2: 7131150803798236285
+      vf_vfx_3: -3009964046987531815
+      vf_vfx_4: -2380608403779207364
+      vf_vfx_5: 3763493993505968808
+      vf_vfx_6: -5382959399232532601
+      vf_vfx_7: -1869340418501281707
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

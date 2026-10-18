@@ -1168,7 +1168,7 @@
     "m_PerRendererData": false,
     "m_customAttributes": [],
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"6bd3cf038e37a6e0cb372022adda2389\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"0cc82e6585f74db80ab8ea753245f571\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -1571,7 +1571,7 @@
     "m_PerRendererData": false,
     "m_customAttributes": [],
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"65c3890fabde96332a1d201b3096497b\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"48e599550d5cf9d7882bf4e5eeb0c53b\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
