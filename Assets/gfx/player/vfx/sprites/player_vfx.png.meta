@@ -3,32 +3,32 @@ guid: efec606a58938c9a3b0a25bbb6b51d8c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -800928512638074294
-    second: thruster_sheet_0
+      213: -2945087048080316657
+    second: player_vfx_0
   - first:
-      213: -8663620033340638942
-    second: thruster_sheet_1
+      213: -2747650895612302988
+    second: player_vfx_1
   - first:
-      213: -4182677310294841462
-    second: thruster_sheet_2
+      213: 7312950483455201641
+    second: player_vfx_2
   - first:
-      213: 1492313903645518588
-    second: thruster_sheet_3
+      213: -5655534244481968615
+    second: player_vfx_3
   - first:
-      213: -1813579794532739496
-    second: thruster_sheet_4
+      213: -7721471683346312311
+    second: player_vfx_4
   - first:
-      213: -3378241970366070845
-    second: thruster_sheet_5
+      213: 2023870171685364445
+    second: player_vfx_5
   - first:
-      213: -3385651761041109385
-    second: thruster_sheet_6
+      213: 2712064034849242143
+    second: player_vfx_6
   - first:
-      213: -1512659289314482086
-    second: thruster_sheet_7
+      213: 4794201047662810280
+    second: player_vfx_7
   - first:
-      213: 6709880682492878683
-    second: thruster_sheet_8
+      213: 8397356178519426848
+    second: player_vfx_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: thruster_sheet_0
+      name: player_vfx_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a42c9b1e2c782e4f0800000000000000
-      internalID: -800928512638074294
+      spriteID: f07a19afee2f027d0800000000000000
+      internalID: -2945087048080316657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thruster_sheet_1
+      name: player_vfx_1
       rect:
         serializedVersion: 2
         x: 32
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 229f5c34b73a4c780800000000000000
-      internalID: -8663620033340638942
+      spriteID: 479ae3071126ed9d0800000000000000
+      internalID: -2747650895612302988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thruster_sheet_2
+      name: player_vfx_2
       rect:
         serializedVersion: 2
         x: 64
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a872ac5a52524f5c0800000000000000
-      internalID: -4182677310294841462
+      spriteID: 9615e5218b1dc7560800000000000000
+      internalID: 7312950483455201641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thruster_sheet_3
+      name: player_vfx_3
       rect:
         serializedVersion: 2
         x: 96
@@ -207,14 +207,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cfaea28b693c5b410800000000000000
-      internalID: 1492313903645518588
+      spriteID: 9165896a1918381b0800000000000000
+      internalID: -5655534244481968615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thruster_sheet_4
+      name: player_vfx_4
       rect:
         serializedVersion: 2
         x: 0
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 856dc0f19ced4d6e0800000000000000
-      internalID: -1813579794532739496
+      spriteID: 983d7e20a62d7d490800000000000000
+      internalID: -7721471683346312311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thruster_sheet_5
+      name: player_vfx_5
       rect:
         serializedVersion: 2
         x: 32
@@ -251,14 +251,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3cfb30f93d21e11d0800000000000000
-      internalID: -3378241970366070845
+      spriteID: dd2a0deb23b361c10800000000000000
+      internalID: 2023870171685364445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thruster_sheet_6
+      name: player_vfx_6
       rect:
         serializedVersion: 2
         x: 64
@@ -273,14 +273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 77e08f949afb301d0800000000000000
-      internalID: -3385651761041109385
+      spriteID: f1c3d4ddedf23a520800000000000000
+      internalID: 2712064034849242143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thruster_sheet_7
+      name: player_vfx_7
       rect:
         serializedVersion: 2
         x: 96
@@ -295,14 +295,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a58273a0464f10be0800000000000000
-      internalID: -1512659289314482086
+      spriteID: 8a45fbbb37c688240800000000000000
+      internalID: 4794201047662810280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thruster_sheet_8
+      name: player_vfx_8
       rect:
         serializedVersion: 2
         x: 0
@@ -317,14 +317,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5f5e352ee84e1d50800000000000000
-      internalID: 6709880682492878683
+      spriteID: 027051904f6698470800000000000000
+      internalID: 8397356178519426848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thruster_sheet_9
+      name: player_vfx_9
       rect:
         serializedVersion: 2
         x: 32
@@ -339,14 +339,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2f8fde80310f8da4860f4ceaff46d59
-      internalID: -638289576
+      spriteID: c9ee0ec3a06697b24b0ebf3d9e811068
+      internalID: 602160571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thruster_sheet_10
+      name: player_vfx_10
       rect:
         serializedVersion: 2
         x: 64
@@ -361,14 +361,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1940207e0cf115238a248b6aa5066318
-      internalID: -564706617
+      spriteID: bb29eadb23af70d56ab41f15167d9bfd
+      internalID: -1258381086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thruster_sheet_11
+      name: player_vfx_11
       rect:
         serializedVersion: 2
         x: 96
@@ -383,8 +383,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16ad7e6726462fcc690d938abf14f3a9
-      internalID: -534556502
+      spriteID: 76dbb4616f30ff474b8da8fabb0199eb
+      internalID: 1444363266
       vertices: []
       indices: 
       edges: []
@@ -393,7 +393,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 38262b962f52d06e68a4762a76fce780
+    spriteID: b652ff10846d7aa37901d6eb0738e3d5
     internalID: 0
     vertices: []
     indices: 
@@ -407,18 +407,18 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      thruster_sheet_0: -800928512638074294
-      thruster_sheet_1: -8663620033340638942
-      thruster_sheet_10: -564706617
-      thruster_sheet_11: -534556502
-      thruster_sheet_2: -4182677310294841462
-      thruster_sheet_3: 1492313903645518588
-      thruster_sheet_4: -1813579794532739496
-      thruster_sheet_5: -3378241970366070845
-      thruster_sheet_6: -3385651761041109385
-      thruster_sheet_7: -1512659289314482086
-      thruster_sheet_8: 6709880682492878683
-      thruster_sheet_9: -638289576
+      player_vfx_0: -2945087048080316657
+      player_vfx_1: -2747650895612302988
+      player_vfx_10: -1258381086
+      player_vfx_11: 1444363266
+      player_vfx_2: 7312950483455201641
+      player_vfx_3: -5655534244481968615
+      player_vfx_4: -7721471683346312311
+      player_vfx_5: 2023870171685364445
+      player_vfx_6: 2712064034849242143
+      player_vfx_7: 4794201047662810280
+      player_vfx_8: 8397356178519426848
+      player_vfx_9: 602160571
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

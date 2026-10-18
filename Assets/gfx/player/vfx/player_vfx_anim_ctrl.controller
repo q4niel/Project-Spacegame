@@ -54,7 +54,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: thruster_f_boost_anim
+  m_Name: thruster_forward_boost
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -69,7 +69,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0d2e9d3bccbf70b45855446cb8f0d4a0, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3c3c8af42572979939282d743d3c2f95, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -82,7 +82,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: thruster_b_boost_anim
+  m_Name: thruster_backward_boost
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -96,7 +96,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0bd6840f5e731cca8afee16c6dc4bacf, type: 2}
+  m_Motion: {fileID: 7400000, guid: 317a562dfdb9c0c0d9fb04405541e740, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -297,7 +297,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: thruster_default_anim
+  m_Name: thruster_default
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -312,7 +312,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: db9aca553dbd1c51089f46ca27456742, type: 2}
+  m_Motion: {fileID: 7400000, guid: f18712f319d20ad94b1ad0eff4bbf72b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

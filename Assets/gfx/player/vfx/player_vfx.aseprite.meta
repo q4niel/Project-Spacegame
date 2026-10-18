@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 96b1e8ab52c171f868598e9543f73bdd
+guid: 4adb0a760b9841068b251dea5f9d985f
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,7 +127,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: thruster_sheet_emission
+  - name: thruster_sheet
     originalName: 
     pivot: {x: 0.5981308, y: -0.17142858}
     alignment: 9
@@ -139,7 +139,7 @@ ScriptedImporter:
       y: 4
       width: 107
       height: 70
-    spriteID: 99dfa2aca8df76d9390c0deb599b98b0
+    spriteID: 85088d2fbcadd35be864ccbcc15c2f31
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -148,22 +148,85 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: Frame_1
+    originalName: 
+    pivot: {x: 6.4, y: -0.18840581}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 23
+      y: 82
+      width: 10
+      height: 69
+    spriteID: bbca1e3e353c35e7592b1ed2d3fa013d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 23, y: 82}
+  - name: Frame_2
+    originalName: 
+    pivot: {x: 6.4, y: -0.17142858}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 160
+      width: 10
+      height: 70
+    spriteID: 0954a7d373053ddd286248df8871bbba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 160}
+  - name: Frame_3
+    originalName: 
+    pivot: {x: 5.818182, y: -0.17142858}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 82
+      width: 11
+      height: 70
+    spriteID: aa1920445f3271303a3ad7fd3d8e90ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 82}
   spriteSheetImportData: []
   tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 969876125
+      value0: 2164515475
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: thruster_sheet_emission
+    name: thruster_sheet
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: player_vfx_emission
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -171,7 +234,34 @@ ScriptedImporter:
         y: 12
         width: 107
         height: 70
-      spriteId: 99dfa2aca8df76d9390c0deb599b98b0
+      spriteId: 85088d2fbcadd35be864ccbcc15c2f31
+    - name: Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 13
+        width: 10
+        height: 69
+      spriteId: bbca1e3e353c35e7592b1ed2d3fa013d
+    - name: Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 12
+        width: 10
+        height: 70
+      spriteId: 0954a7d373053ddd286248df8871bbba
+    - name: Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 12
+        width: 11
+        height: 70
+      spriteId: aa1920445f3271303a3ad7fd3d8e90ca
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -180,5 +270,5 @@ ScriptedImporter:
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
-  previousTextureSize: {x: 128, y: 128}
+  previousTextureSize: {x: 128, y: 256}
   canvasSize: {x: 128, y: 96}
