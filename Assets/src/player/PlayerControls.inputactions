@@ -290,6 +290,17 @@
                     "action": "boost",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "33139c6c-e73f-48aa-848b-81cf07cefe3c",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "boost",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
